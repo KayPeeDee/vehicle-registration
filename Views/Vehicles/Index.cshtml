@@ -1,0 +1,55 @@
+@model IEnumerable<CrudmvcApp.Models.Vehicle>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>Vehicle Register</h3>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New Vehicle Registration</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Vehicle Reg Number
+            </th>
+            <th>
+                Owner National ID Number
+            </th>
+            <th>
+                Monthly Insurance Amount
+            </th>
+            <th>
+                Date of Registration
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VehicleRegNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OwnerNationalIdNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MonthlyInsuranceAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfRegistration)
+            </td>
+           
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
