@@ -4,11 +4,12 @@
     ViewData["Title"] = "Edit";
 }
 
-<h3>Edit Vehicle Details</h3>
-
-<hr />
 <div class="row">
     <div class="col-md-8">
+        <div class="d-sm-flex align-Register-center justify-content-between mb-4">
+            <h5 class="mb-0 text-gray-800">Edit A Vehicle Details</h5>
+            <a asp-action="Index"  class="btn btn-sm btn-primary shadow-sm">Back To Register</a>
+        </div>
          <div class="card shadow">
              <div class="card-body">
                 <form asp-action="Edit">
@@ -45,9 +46,6 @@
     </div>
 </div>
 
-<div class="mt-4">
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

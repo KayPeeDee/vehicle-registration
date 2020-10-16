@@ -4,52 +4,63 @@
     ViewData["Title"] = "Index";
 }
 
-<h3>Vehicle Register</h3>
+ <div class="row justify-content-center">
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">Create New Vehicle Registration</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Vehicle Reg Number
-            </th>
-            <th>
-                Owner National ID Number
-            </th>
-            <th>
-                Monthly Insurance Amount
-            </th>
-            <th>
-                Date of Registration
-            </th>
-            
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.VehicleRegNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.OwnerNationalIdNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MonthlyInsuranceAmount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DateOfRegistration)
-            </td>
-           
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+     <div class="col-md-12">
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h5 class="mb-0 text-gray-800">Vehicle Register</h5>
+            <a asp-action="Create"  class="btn btn-sm btn-primary shadow-sm">Create New Vehicle Registration</a>
+        </div>
+
+        <div class="card shadow mb-4">
+            <div class="list-group list-group-flush">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                Vehicle Reg Number
+                            </th>
+                            <th>
+                                Owner National ID Number
+                            </th>
+                            <th>
+                                Monthly Insurance Amount
+                            </th>
+                            <th>
+                                Date of Registration
+                            </th>
+                            
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var item in Model) {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.VehicleRegNumber)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OwnerNationalIdNumber)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MonthlyInsuranceAmount)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DateOfRegistration)
+                            </td>
+                        
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm">Edit</a> 
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-secondary btn-sm">Details</a> 
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+     </div>
+     
+ </div>
+

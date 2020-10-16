@@ -4,39 +4,49 @@
     ViewData["Title"] = "Details";
 }
 
-<h3>Vehicle Details</h3>
+<div class="row justify-content-center">
 
-<div>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-             Vehicle Reg Number
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.VehicleRegNumber)
-        </dd>
-        <dt class = "col-sm-2">
-             Owner National ID Number
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.OwnerNationalIdNumber)
-        </dd>
-        <dt class = "col-sm-2">
-            Monthly Insurance Amount
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.MonthlyInsuranceAmount)
-        </dd>
-        <dt class = "col-sm-2">
-             Date of Registration
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DateOfRegistration)
-        </dd>
-       
-    </dl>
+    <div class="col-md-12">
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h5 class="mb-0 text-gray-800">Vehicle Details</h5>
+            <div>
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-success btn-sm">Edit</a> 
+                <a asp-action="Index" class="btn btn-primary btn-sm">Back to Register</a>
+            </div>
+        </div>
+
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <dl class="row">
+                    <dt class = "col-sm-2">
+                        Vehicle Reg Number
+                    </dt>
+                    <dd class = "col-sm-10">
+                        @Html.DisplayFor(model => model.VehicleRegNumber)
+                    </dd>
+                    <dt class = "col-sm-2">
+                        Owner National ID Number
+                    </dt>
+                    <dd class = "col-sm-10">
+                        @Html.DisplayFor(model => model.OwnerNationalIdNumber)
+                    </dd>
+                    <dt class = "col-sm-2">
+                        Monthly Insurance Amount
+                    </dt>
+                    <dd class = "col-sm-10">
+                        @Html.DisplayFor(model => model.MonthlyInsuranceAmount)
+                    </dd>
+                    <dt class = "col-sm-2">
+                        Date of Registration
+                    </dt>
+                    <dd class = "col-sm-10">
+                        @Html.DisplayFor(model => model.DateOfRegistration)
+                    </dd>
+                
+                </dl>
+            </div>
+        </div>
+
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+
