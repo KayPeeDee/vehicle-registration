@@ -18,12 +18,24 @@ namespace crudmvc_app.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Owners()
         {
             return View();
         }
 
+        public IActionResult Dashboard()
+        {
+            return View();
+        }
+
+
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        
+        public IActionResult Payments()
         {
             return View();
         }

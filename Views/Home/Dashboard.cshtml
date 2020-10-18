@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card shadow">
+            <div class="card-body text-center">
+                <i class="text-gray-800 fa fa-5x fa-car"></i>
+            </div>
+            <div class="card-body">
+               
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h5 class="mb-0 text-gray-800">Vehicles Registration</h5>
+                    <a asp-area="" asp-controller="Vehicles" asp-action="Index"  class="btn btn-sm btn-secondary shadow-sm"><i class="fa fa-arrow-right"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow">
+            <div class="card-body text-center">
+                <i class="text-gray-800 fa fa-5x fa-users"></i>
+            </div>
+            <div class="card-body">
+                
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h5 class="mb-0 text-gray-800">Vehicle Owners</h5>
+                    <a asp-controller="Home" asp-action="Owners"  class="btn btn-sm btn-secondary shadow-sm"><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="col-md-4">
+        <div class="card shadow">
+            <div class="card-body text-center">
+                <i class="text-gray-800 fa fa-5x fa-money"></i>
+            </div>
+            <div class="card-body">
+               
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h5 class="mb-0 text-gray-800">Insurance Payments</h5>
+                    <a asp-controller="Home" asp-action="Payments"  class="btn btn-sm btn-secondary shadow-sm"><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

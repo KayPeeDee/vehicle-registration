@@ -169,7 +169,6 @@
 /home/tanka/code_junkie/csharp_practice/CrudmvcApp/obj/Debug/netcoreapp3.1/crudmvc-app.TagHelpers.input.cache
 /home/tanka/code_junkie/csharp_practice/CrudmvcApp/obj/Debug/netcoreapp3.1/crudmvc-app.TagHelpers.output.cache
 /home/tanka/code_junkie/csharp_practice/CrudmvcApp/obj/Debug/netcoreapp3.1/crudmvc-app.RazorCoreGenerate.cache
-/home/tanka/code_junkie/csharp_practice/CrudmvcApp/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
 /home/tanka/code_junkie/csharp_practice/CrudmvcApp/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
 /home/tanka/code_junkie/csharp_practice/CrudmvcApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
 /home/tanka/code_junkie/csharp_practice/CrudmvcApp/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
@@ -212,3 +211,6 @@
 /home/tanka/code_junkie/csharp_practice/CrudmvcApp/obj/Debug/netcoreapp3.1/Razor/Views/Vehicles/Details.cshtml.g.cs
 /home/tanka/code_junkie/csharp_practice/CrudmvcApp/obj/Debug/netcoreapp3.1/Razor/Views/Vehicles/Edit.cshtml.g.cs
 /home/tanka/code_junkie/csharp_practice/CrudmvcApp/obj/Debug/netcoreapp3.1/Razor/Views/Vehicles/Index.cshtml.g.cs
+/home/tanka/code_junkie/csharp_practice/CrudmvcApp/obj/Debug/netcoreapp3.1/Razor/Views/Home/Dashboard.cshtml.g.cs
+/home/tanka/code_junkie/csharp_practice/CrudmvcApp/obj/Debug/netcoreapp3.1/Razor/Views/Home/Owners.cshtml.g.cs
+/home/tanka/code_junkie/csharp_practice/CrudmvcApp/obj/Debug/netcoreapp3.1/Razor/Views/Home/Payments.cshtml.g.cs
